@@ -34,6 +34,16 @@ export const siteSections = {
         headerTitle: 'Votes',
         candidateList: [
             {
+                id: '0001',
+                name: 'Edwin ',
+                imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/edwin_torres.jpg',
+                publishedDate: '2020-05-16',
+                publishedAt: 'Technology',
+                excerpt: 'Full stack Developer. He loves coding and share the knowledge, also he is a traveler.',
+                voted: true,
+                likes: 93,
+                dislikes: 7
+            }, {
                 id: '1001',
                 name: 'Kanye West',
                 imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/kanye_west.jpg',

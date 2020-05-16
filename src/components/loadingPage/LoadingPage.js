@@ -4,7 +4,7 @@ import './LoadingPage.scss';
 const LoadingPage = () => {
     return (
         <div className="loading-page">
-            <span className="loading-page__text">LOADING...</span>
+            <span className="loading-page__text">LOADING... 😎</span>
         </div>
     )
 }
