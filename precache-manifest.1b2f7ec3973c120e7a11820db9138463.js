@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02e8c79fe0ab96617522c930b24df835",
+    "revision": "139a6a380ac74d81daf728b349736cb3",
     "url": "/zemoga-ui-test/index.html"
   },
   {
