@@ -1,14 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Provider } from 'react-redux';
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import { createLogger } from 'redux-logger/src';
+import thunkMiddleware from 'redux-thunk';
+
+import './styles/main.scss';
+import App from './containers/App/App';
 import * as serviceWorker from './serviceWorker';
+import { contentReducer, votesReducer } from './store/reducers';
+
+const logger = createLogger();
+const store = createStore(
+    combineReducers({
+        content: contentReducer,
+        votes: votesReducer
+    }),
+    applyMiddleware(thunkMiddleware, logger)
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <React.StrictMode>
+            <App/>
+        </React.StrictMode>,
+    </Provider>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

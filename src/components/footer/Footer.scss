@@ -1,0 +1,67 @@
+@import "../../styles/abstract/variables";
+@import "../../styles/base/typography";
+@import "../../styles/mixins/responsive";
+
+.footer {
+  display: flex;
+  border-top: 0.05rem dashed $border-color;
+  padding: 2.4rem 0;
+  flex-direction: column;
+
+  @include respond('tablet-portrait') {
+    flex-direction: row;
+  }
+
+  &__links, &__social-networks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: $text-color-light;
+    }
+
+    @include respond('tablet-portrait') {
+      flex-direction: row;
+    }
+  }
+
+  &__social-networks {
+    margin-top: 1.2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @include respond('tablet-portrait') {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__link {
+    margin-top: 0.5rem;
+
+    @include respond('tablet-portrait') {
+      margin-top: 0;
+      margin-right: 2.6rem;
+    }
+  }
+
+  &__network {
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    span {
+      color: $text-color;
+      font-size: 1.6rem;
+    }
+
+    @include respond('tablet-portrait') {
+      margin-top: 0;
+    }
+  }
+}

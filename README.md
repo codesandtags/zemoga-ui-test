@@ -36,6 +36,15 @@ First of all I have to say that this test involves many skills :) and that's nic
 
 After written this part, let's fun with the test. 🎉
 
+# Timeline
+
+1. I've started creating the content in order to make the site dynamic. This model could be imported in [Contentful](https://www.contentful.com/) for instance, and the changes could be easier.
+2. The images! damn! it was a tricky part because I'm not a designer, so I don't have too many tools to work with design, but after googling I found a way to open the PSD. 
+ - I've used [Avocode](https://avocode.com/convert-psd-to-sketch/downloading/99a82695-cd18-49ad-b634-549579cc7f51/test-ui-v2.sketch) to convert the PSD to Sketch
+ - I've downloaded Sketch to get the images.
+ - I've downloaded Figma to copy the images from Sketch and export them to png. The images were exported in 1x and JPG given the huge size.
+3. After getting the assets and defined the content model. It's time to render the components.   
+
 # Checklist
 
 ## Layout HTML-CSS
