@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "139a6a380ac74d81daf728b349736cb3",
+    "revision": "1b2a7f49562274fb1705e29b2aed69e0",
     "url": "/zemoga-ui-test/index.html"
   },
   {
-    "revision": "f3cb2e6f1dcc88545d21",
-    "url": "/zemoga-ui-test/static/css/main.2e80a0f6.chunk.css"
+    "revision": "e167255be32718c40de8",
+    "url": "/zemoga-ui-test/static/css/main.d5bfd861.chunk.css"
   },
   {
     "revision": "ab622ddb27cc94820195",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zemoga-ui-test/static/js/2.7150d177.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f3cb2e6f1dcc88545d21",
-    "url": "/zemoga-ui-test/static/js/main.e0122b35.chunk.js"
+    "revision": "e167255be32718c40de8",
+    "url": "/zemoga-ui-test/static/js/main.7be06639.chunk.js"
   },
   {
     "revision": "19ee8acdb37b6771c07e",
