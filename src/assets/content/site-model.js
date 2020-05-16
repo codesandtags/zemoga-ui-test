@@ -18,7 +18,7 @@ export const siteSections = {
         currentCandidate: {
             id: '1000',
             name: 'Pope Francis',
-            imageUrl: '/assets/images/candidates/kanye_west.jpg',
+            imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/pope_francisco.jpg',
             excerpt: 'He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) ',
             verdictText: "What's your verdict",
             moreInformationText: 'More information?',
@@ -36,7 +36,7 @@ export const siteSections = {
             {
                 id: '1001',
                 name: 'Kanye West',
-                imageUrl: '/assets/images/candidates/kanye_west.jpg',
+                imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/kanye_west.jpg',
                 publishedDate: '2020-03-20',
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
@@ -46,7 +46,7 @@ export const siteSections = {
             }, {
                 id: '1002',
                 name: 'Mark Zuckerberg',
-                imageUrl: '/assets/images/candidates/kanye_west.jpg',
+                imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/mark.jpg',
                 publishedDate: '2020-03-20',
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
@@ -56,7 +56,7 @@ export const siteSections = {
             }, {
                 id: '1003',
                 name: 'Cristina Fernández de Kirchner',
-                imageUrl: '/assets/images/candidates/kanye_west.jpg',
+                imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/cristina_fernandez.jpg',
                 publishedDate: '2020-03-20',
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
@@ -66,7 +66,7 @@ export const siteSections = {
             }, {
                 id: '1004',
                 name: 'Malaya Yousafzai',
-                imageUrl: '/assets/images/candidates/kanye_west.jpg',
+                imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/malaya.jpg',
                 publishedDate: '2020-03-20',
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',

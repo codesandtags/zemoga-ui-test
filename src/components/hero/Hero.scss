@@ -1,4 +1,178 @@
 @import "../../styles/abstract/variables";
+@import "../../styles/mixins/responsive";
 
 .hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 12rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @include respond('tablet-portrait') {
+    padding-top: 17rem;
+  }
+
+  &__inner-container {
+    display: flex;
+    justify-content: center;
+
+    @include respond('tablet-landscape') {
+      justify-content: flex-start;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+      max-width: 100%;
+      max-height: inherit;
+      width: auto;
+    }
+  }
+
+  &__campaign-time {
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__campaign-left {
+    height: 4.6rem;
+    background: rgba($text-color-light, 0.5);
+    color: $color-white;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  &__campaign-right {
+    padding-left: 1.2rem;
+    height: 4.6rem;
+    background: rgba($color-white, 0.8);
+    color: $text-color-light;
+    font-size: 2.8rem;
+    font-family: "Lato-Light";
+    display: flex;
+    align-items: center;
+    width: 70%;
+    word-spacing: 1rem;
+  }
+
+  &__campaign-days {
+    padding-right: 1.2rem;
+    color: $text-color;
+    font-family: "Lato-Regular";
+  }
+
+  &__card {
+    overflow: hidden;
+    background: rgba($color-black, 0.4);
+    position: relative;
+    color: $color-white;
+    width: 100%;
+    max-width: 50rem;
+    margin-bottom: 6.4rem;
+  }
+
+  &__card-content {
+    padding: 3.6rem;
+  }
+
+  &__card-actions {
+    width: 100%;
+    display: flex;
+
+    .thumbs {
+      padding: 1.8rem;
+      font-size: 2rem;
+      text-align: center;
+      width: 50%;
+      cursor: pointer;
+    }
+
+    .thumbs--up {
+      background: rgba($color-primary, 0.8);
+
+      &:hover {
+        background: rgba(darken($color-primary, 10%), 0.8);
+      }
+    }
+
+    .thumbs--down {
+      background: rgba($color-secondary, 0.8);
+
+      &:hover {
+        background: rgba(darken($color-secondary, 10%), 0.8);
+      }
+    }
+  }
+
+  &__blur {
+    background: rgba($border-color, 0.7);
+    filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .candidate {
+    text-align: left;
+    font-family: 'Lato-Light';
+
+    &__title {
+      font-size: 1.8rem;
+    }
+
+    &__excerpt {
+      margin: 2.5rem 0;
+      font-size: 1.4rem;
+
+      @include respond('tablet-portrait') {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__subtitle {
+      font-family: 'Lato-Regular';
+      font-size: 4rem;
+
+      @include respond('tablet-portrait') {
+        font-size: 5.6rem;
+      }
+    }
+
+    &__more-information {
+
+    }
+
+    &__verdict {
+      font-family: 'Lato-Regular';
+      font-size: 2rem;
+      margin-top: 2rem;
+
+      @include respond('tablet-portrait') {
+        margin-top: 4rem;
+      }
+    }
+  }
+
 }

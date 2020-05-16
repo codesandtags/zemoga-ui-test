@@ -11,4 +11,9 @@
   margin: auto;
   width: 100%;
   max-width: $max-width-inner-container;
+  padding: 1.6rem;
+
+  @include respond('tablet-landscape') {
+    padding: 0;
+  }
 }

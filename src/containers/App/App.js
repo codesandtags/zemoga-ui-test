@@ -34,9 +34,8 @@ function App() {
 
     return (
         <div className="App container">
-            <NavBar />
+            <Hero content={content.hero}/>
             <div className="inner-container">
-                <Hero content={content.hero}/>
                 <VotingSection content={content.votes}/>
                 <Footer content={content.footer}/>
             </div>
