@@ -9,6 +9,7 @@ import VotingSection from '../../components/voting-section/VotingSection';
 import Footer from '../../components/footer/Footer';
 import NavBar from '../../components/navbar/NavBar';
 import FeaturedText from '../../components/featured-text/FeaturedText';
+import NameForm from '../../components/name-form/NameForm';
 
 // Components
 
@@ -40,6 +41,7 @@ function App() {
             <div className="inner-container">
                 <FeaturedText content={content.featuredTest} />
                 <VotingSection content={content.votes}/>
+                <NameForm />
                 <Footer content={content.footer}/>
             </div>
         </div>

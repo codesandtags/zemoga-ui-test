@@ -23,6 +23,12 @@ const NavBar = ({ navigation, heading }) => {
 
     return (
         <nav className="navbar">
+            <div htmlFor="hamburger" className="hamburger-menu">
+                <span className="hamburger-menu__slice"></span>
+                <span className="hamburger-menu__slice"></span>
+                <span className="hamburger-menu__slice"></span>
+            </div>
+
             <div className="navbar__blur"></div>
             <div className="inner-container navbar__container">
                 <h1 className="navbar__heading">

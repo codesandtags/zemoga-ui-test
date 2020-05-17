@@ -89,7 +89,7 @@ export const siteSections = {
                 imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/dj_edgerton.jpg',
                 publishedDate: '2020-05-16',
                 publishedAt: 'Technology',
-                excerpt: 'Is the Founder and CEO of Zemoga, a leading design and engineering firm w/ offices in NYC, Wilton, CT, Medellin, Barranquilla & Bogota, Colombia',
+                excerpt: 'Is the Founder and CEO of Zemoga, a leading design and engineering firm.',
                 voted: false,
                 likes: 50,
                 dislikes: 50
