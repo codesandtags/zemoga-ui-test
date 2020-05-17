@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zemoga-ui-test/precache-manifest.68fdbd98649848c995d493953f49370a.js"
+  "/zemoga-ui-test/precache-manifest.9a299a53b4960bcb6a7c0d9bc856f1a8.js"
 );
 
 self.addEventListener('message', (event) => {
