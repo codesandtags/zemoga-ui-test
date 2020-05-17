@@ -8,6 +8,7 @@ import Hero from '../../components/hero/Hero';
 import VotingSection from '../../components/voting-section/VotingSection';
 import Footer from '../../components/footer/Footer';
 import NavBar from '../../components/navbar/NavBar';
+import FeaturedText from '../../components/featured-text/FeaturedText';
 
 // Components
 
@@ -34,8 +35,10 @@ function App() {
 
     return (
         <div className="App container">
+            <NavBar navigation={content.navigation} heading={content.siteName}/>
             <Hero content={content.hero}/>
             <div className="inner-container">
+                <FeaturedText content={content.featuredTest} />
                 <VotingSection content={content.votes}/>
                 <Footer content={content.footer}/>
             </div>

@@ -20,7 +20,7 @@ export const fetchContentSite = () => dispatch => {
                 ...siteSections
             }
         });
-    }, 1000);
+    }, 1500);
 };
 
 export const voteYes = () => {

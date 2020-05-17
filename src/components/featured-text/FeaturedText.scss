@@ -1,4 +1,60 @@
 @import "../../styles/abstract/variables";
+@import "../../styles/mixins/responsive";
 
-.hero {
+.featured-text {
+  display: flex;
+  margin: 3.4rem 0;
+  background-color: $color-light;
+  padding: 2.4rem;
+  text-align: left;
+  flex-direction: column;
+  position: relative;
+
+  @include respond('tablet-landscape') {
+    flex-direction: row;
+  }
+
+  &__left {
+    min-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+
+    @include respond('tablet-landscape') {
+      padding-bottom: 0;
+    }
+  }
+
+  &__right {
+    font-family: "Lato-Light";
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Lato-Light";
+    color: $text-color;
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 3.2rem;
+  }
+
+  &__close-button {
+    position: absolute;
+    right: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: $text-color-light;
+    font-size: 2rem;
+
+    @include respond('tablet-landscape') {
+      right: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }

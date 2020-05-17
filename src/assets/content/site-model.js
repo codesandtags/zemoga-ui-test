@@ -28,14 +28,14 @@ export const siteSections = {
     featuredTest: {
         title: 'Speak out. Be heard.',
         subtitle: 'Be counted',
-        text: 'Rule of Thumb is a crowded source '
+        text: 'Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.'
     },
     votes: {
         headerTitle: 'Votes',
         candidateList: [
             {
                 id: '0001',
-                name: 'Edwin ',
+                name: 'Edwin Torres',
                 imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/edwin_torres.jpg',
                 publishedDate: '2020-05-16',
                 publishedAt: 'Technology',
@@ -83,6 +83,16 @@ export const siteSections = {
                 voted: false,
                 likes: 64,
                 dislikes: 36
+            }, {
+                id: '0002',
+                name: 'DJ Edgerton',
+                imageUrl: 'https://raw.githubusercontent.com/codesandtags/zemoga-ui-test/feature/layout-solution/src/assets/images/candidates/dj_edgerton.jpg',
+                publishedDate: '2020-05-16',
+                publishedAt: 'Technology',
+                excerpt: 'Is the Founder and CEO of Zemoga, a leading design and engineering firm w/ offices in NYC, Wilton, CT, Medellin, Barranquilla & Bogota, Colombia',
+                voted: false,
+                likes: 50,
+                dislikes: 50
             }
         ],
     },
