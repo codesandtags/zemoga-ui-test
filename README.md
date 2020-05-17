@@ -52,9 +52,9 @@ After written this part, let's fun with the test. 🎉
 - Rely on HTML5 semantics and CSS3 features as possible. Assume cool browsers such as Chrome, Firefox Safari and Edge, latest versions.
 
 Requirements:
-- [ ] Use media queries to adapt the layout in small screens. (comp not provided, so use your creativity).
-- [ ] Non safe web font used: Lato
-- [ ] You can rely on preprocessors / transpilers such as LESS/SASS or any sort of CSS framework if you want. (Pure CSS is also an option but you must argue the benefits)
+- [X] Use media queries to adapt the layout in small screens. (comp not provided, so use your creativity).
+- [X] Non safe web font used: Lato
+- [X] You can rely on preprocessors / transpilers such as LESS/SASS or any sort of CSS framework if you want. (Pure CSS is also an option but you must argue the benefits)
 - [ ] Clicking on one of the links of the main menu redirects the user to the other pages (we only provide a comp for the main page so just use white pages with the title section on them).
 
 ## Interaction - JS
@@ -62,7 +62,7 @@ Requirements:
 Just add interaction in the middle voting boxes: Kanye West, Mark Zuckerberg, Cristina Fernández de Kirchner and Malala Yousafzai.
 
 Requirements:
-- [ ] Create a data feed in JSON format with the structure that best suits the content for the voting boxes and populate the initial content from it.
+- [X] Create a data feed in JSON format with the structure that best suits the content for the voting boxes and populate the initial content from it.
 - [ ] The user can select either thumb up or thumb down button on each of the boxes (when the button is selected, a white border is displayed as featured in the comp)
 - [ ] Once the user clicks on the "Vote now” button, a message is displayed saying “Thank you for voting!” as well as a vote again button to vote again.
 - [ ] There is no limit in the amount of votes

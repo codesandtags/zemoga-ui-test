@@ -1,4 +1,10 @@
-import { FETCH_CONTENT_SITE, FETCH_CONTENT_SITE_PENDING, VOTE_NO, VOTE_YES } from './actions';
+import {
+    FETCH_CONTENT_SITE,
+    FETCH_CONTENT_SITE_PENDING,
+    VOTE_AGAIN,
+    VOTE_NO,
+    VOTE_YES
+} from './actions';
 
 export const contentInitialState = {
     isPending: false,
@@ -7,7 +13,7 @@ export const contentInitialState = {
 
 export const contentReducer = (state = contentInitialState, action) => {
 
-    switch(action.type) {
+    switch (action.type) {
         case FETCH_CONTENT_SITE_PENDING:
             return {
                 ...state,
@@ -17,9 +23,57 @@ export const contentReducer = (state = contentInitialState, action) => {
         case FETCH_CONTENT_SITE:
             return {
                 site: {
-                  ...action.payload
+                    ...action.payload
                 },
                 isPending: false
+            };
+
+        case VOTE_YES:
+            return {
+                ...state,
+                site: {
+                    ...state.site,
+                    votes: {
+                        candidateList: [
+                            ...getUpdatedCandidateListWithLike(
+                                state.site.votes.candidateList,
+                                action.payload.candidateId
+                            )
+                        ]
+                    }
+                }
+            };
+
+        case VOTE_NO:
+            return {
+                ...state,
+                site: {
+                    ...state.site,
+                    votes: {
+                        candidateList: [
+                            ...getUpdatedCandidateListWithDislike(
+                                state.site.votes.candidateList,
+                                action.payload.candidateId
+                            )
+                        ]
+                    }
+                }
+            };
+
+        case VOTE_AGAIN:
+            return {
+                ...state,
+                site: {
+                    ...state.site,
+                    votes: {
+                        candidateList: [
+                            ...getUpdatedCandidateListWithVoteAgain(
+                                state.site.votes.candidateList,
+                                action.payload.candidateId
+                            )
+                        ]
+                    }
+                }
             };
 
         default:
@@ -27,16 +81,31 @@ export const contentReducer = (state = contentInitialState, action) => {
     }
 };
 
-export const votesInitialState = {
+const getUpdatedCandidateListWithVoteAgain = (candidates, candidateId) => {
+    const candidate = candidates.findIndex(candidate => candidate.id === candidateId);
+    candidates[candidate].voted = false;
+
+    return candidates;
 };
 
-export const votesReducer = (state = votesInitialState, action) => {
-    switch (action.type) {
-        case VOTE_YES:
-            return state;
+const getUpdatedCandidateListWithLike = (candidates, candidateId) => {
+    const candidate = candidates.findIndex(candidate => candidate.id === candidateId);
+    candidates[candidate].likes++;
+    candidates[candidate].voted = true;
 
-        case VOTE_NO:
-            return state;
+    return candidates;
+};
+
+const getUpdatedCandidateListWithDislike = (candidates, candidateId) => {
+    const candidate = candidates.findIndex(candidate => candidate.id === candidateId);
+    candidates[candidate].dislikes++;
+    candidates[candidate].voted = true;
+
+    return candidates;
+};
+
+export const votesReducer = (state = contentInitialState, action) => {
+    switch (action.type) {
 
         default:
             return state;

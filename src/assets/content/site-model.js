@@ -41,8 +41,8 @@ export const siteSections = {
                 publishedAt: 'Technology',
                 excerpt: 'Full stack Developer. He loves coding and share the knowledge, also he is a traveler.',
                 voted: true,
-                likes: 93,
-                dislikes: 7
+                likes: 3,
+                dislikes: 1
             }, {
                 id: '1001',
                 name: 'Kanye West',
@@ -51,8 +51,8 @@ export const siteSections = {
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
                 voted: false,
-                likes: 64,
-                dislikes: 36
+                likes: 6,
+                dislikes: 3
             }, {
                 id: '1002',
                 name: 'Mark Zuckerberg',
@@ -60,9 +60,9 @@ export const siteSections = {
                 publishedDate: '2020-03-20',
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
-                voted: false,
-                likes: 64,
-                dislikes: 36
+                voted: true,
+                likes: 13,
+                dislikes: 3
             }, {
                 id: '1003',
                 name: 'Cristina Fernández de Kirchner',
@@ -71,8 +71,8 @@ export const siteSections = {
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
                 voted: false,
-                likes: 64,
-                dislikes: 36
+                likes: 1,
+                dislikes: 8
             }, {
                 id: '1004',
                 name: 'Malaya Yousafzai',
@@ -81,8 +81,8 @@ export const siteSections = {
                 publishedAt: 'Entertainment',
                 excerpt: 'Vestibulum diam ante, porttitor a odio egent, rhoncus neque. Aenan eu velit libero.',
                 voted: false,
-                likes: 64,
-                dislikes: 36
+                likes: 6,
+                dislikes: 6
             }, {
                 id: '0002',
                 name: 'DJ Edgerton',
@@ -91,8 +91,8 @@ export const siteSections = {
                 publishedAt: 'Technology',
                 excerpt: 'Is the Founder and CEO of Zemoga, a leading design and engineering firm.',
                 voted: false,
-                likes: 50,
-                dislikes: 50
+                likes: 5,
+                dislikes: 5
             }
         ],
     },

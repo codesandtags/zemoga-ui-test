@@ -3,9 +3,9 @@ import './NavBar.scss';
 
 const NavBar = ({ navigation, heading }) => {
     const renderNavigationLinks = () => {
-        const links = navigation.links.map((item) => {
+        const links = navigation.links.map((item, index) => {
             return (
-                <li className="navbar__link">
+                <li className="navbar__link" key={`navbar_link_${index}`}>
                     <a href={item.link}>{item.label}</a>
                 </li>
             )

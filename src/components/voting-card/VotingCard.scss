@@ -108,17 +108,29 @@
   color: $color-white;
 
   &__like {
+    transition: all 1s ease-in;
     text-align: left;
     padding: 1rem;
     background: rgba($color-primary, 0.8);
-    width: 64%;
+    width: 50%;
+  }
+
+  &__like-value {
+    position: absolute;
+    left: 1rem;
   }
 
   &__dislike {
+    transition: all 1s ease-in;
     text-align: right;
     padding: 1rem;
     background: rgba($color-secondary, 0.8);
-    width: 36%;
+    width: 50%;
+  }
+
+  &__dislike-value {
+    position: absolute;
+    right: 1rem;
   }
 
   &__value {
@@ -154,5 +166,9 @@
       border-color: $color-white;
       background: rgba(darken($color-secondary, 10%), 0.8);
     }
+  }
+
+  &--selected {
+    border-color: $color-white;
   }
 }

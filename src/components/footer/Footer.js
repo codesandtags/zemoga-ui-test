@@ -3,9 +3,9 @@ import './Footer.scss';
 
 const Footer = ({ content }) => {
     const getLinks = () => {
-        return content.links.map((item) => {
+        return content.links.map((item, index) => {
             return (
-                <li className="footer__link">
+                <li className="footer__link" key={`footer_link_${index}`}>
                     <a href={item.link}>{item.label}</a>
                 </li>
             )
@@ -13,10 +13,10 @@ const Footer = ({ content }) => {
     };
 
     const getSocialNetWorks = () => {
-        return content.socialNetworks.map((item) => {
+        return content.socialNetworks.map((item, index) => {
             if (!item.icon) {
                 return (
-                    <li className="footer__network">
+                    <li className="footer__network" key={`footer_social_${index}`}>
                         <a href={item.link}>{item.label}</a>
                     </li>
                 )
@@ -24,7 +24,7 @@ const Footer = ({ content }) => {
 
             const iconClassName = `fab fa-${item.icon}`;
             return (
-                <li className="footer__network">
+                <li className="footer__network" key={`footer_social_${index}`}>
                     <a href={item.link}><span className={iconClassName}></span></a>
                 </li>
             )

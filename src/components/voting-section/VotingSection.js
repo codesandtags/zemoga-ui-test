@@ -4,9 +4,9 @@ import VotingCard from '../voting-card/VotingCard';
 
 const VotingSection = ({ content }) => {
     const renderVoteCards = () => {
-        return content.candidateList.map((candidate) => {
+        return content.candidateList.map((candidate, index) => {
             return (
-                <VotingCard candidate={candidate} />
+                <VotingCard candidate={candidate} key={`voting_card_${index}`} />
             );
         });
     }
