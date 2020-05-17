@@ -2,8 +2,8 @@ import {
     FETCH_CONTENT_SITE,
     FETCH_CONTENT_SITE_PENDING,
     VOTE_AGAIN,
-    VOTE_NO,
-    VOTE_YES
+    VOTE_NO, VOTE_NO_CURRENT_CANDIDATE,
+    VOTE_YES, VOTE_YES_CURRENT_CANDIDATE
 } from './actions';
 
 export const contentInitialState = {
@@ -76,6 +76,32 @@ export const contentReducer = (state = contentInitialState, action) => {
                 }
             };
 
+        case VOTE_YES_CURRENT_CANDIDATE:
+            return {
+                ...state,
+                site: {
+                    ...state.site,
+                    hero: {
+                        currentCandidate: {
+                            ...getUpdatedCurrentCandidateWithLike(state.site.hero.currentCandidate)
+                        }
+                    }
+                }
+            };
+
+        case VOTE_NO_CURRENT_CANDIDATE:
+            return {
+                ...state,
+                site: {
+                    ...state.site,
+                    hero: {
+                        currentCandidate: {
+                            ...getUpdatedCurrentCandidateWithDislike(state.site.hero.currentCandidate)
+                        }
+                    }
+                }
+            };
+
         default:
             return state;
     }
@@ -102,6 +128,20 @@ const getUpdatedCandidateListWithDislike = (candidates, candidateId) => {
     candidates[candidate].voted = true;
 
     return candidates;
+};
+
+const getUpdatedCurrentCandidateWithLike = (candidate) => {
+    candidate.likes++;
+    candidate.voted = true;
+
+    return candidate;
+};
+
+const getUpdatedCurrentCandidateWithDislike = (candidate) => {
+    candidate.dislikes++;
+    candidate.voted = true;
+
+    return candidate;
 };
 
 export const votesReducer = (state = contentInitialState, action) => {

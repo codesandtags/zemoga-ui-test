@@ -4,13 +4,13 @@ export const siteSections = {
         links: [
             {
                 label: 'Past trials',
-                link: '#'
+                link: '/past-trials'
             }, {
                 label: 'How it works',
-                link: '#'
+                link: '/hot-it-works'
             }, {
-                label: 'Log In / Sing Up',
-                link: '#'
+                label: 'Log In / Sign Up',
+                link: '/log-in'
             }
         ]
     },
@@ -22,7 +22,10 @@ export const siteSections = {
             excerpt: 'He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up) ',
             verdictText: "What's your verdict",
             moreInformationText: 'More information?',
-            moreInformationLink: '#'
+            moreInformationLink: '#',
+            voted: false,
+            likes: 10,
+            dislikes: 1
         },
     },
     featuredTest: {
@@ -117,11 +120,11 @@ export const siteSections = {
             }, {
                 label: '',
                 icon: 'facebook',
-                link: '#'
+                link: 'https://www.facebook.com/HRZemoga'
             }, {
                 label: '',
                 icon: 'twitter',
-                link: '#'
+                link: 'https://twitter.com/zemoga?lang=es'
             }
         ]
     }

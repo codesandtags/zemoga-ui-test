@@ -25,7 +25,7 @@ const Footer = ({ content }) => {
             const iconClassName = `fab fa-${item.icon}`;
             return (
                 <li className="footer__network" key={`footer_social_${index}`}>
-                    <a href={item.link}><span className={iconClassName}></span></a>
+                    <a href={item.link} target="_blank"><span className={iconClassName}></span></a>
                 </li>
             )
         });

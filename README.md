@@ -43,7 +43,20 @@ After written this part, let's fun with the test. 🎉
  - I've used [Avocode](https://avocode.com/convert-psd-to-sketch/downloading/99a82695-cd18-49ad-b634-549579cc7f51/test-ui-v2.sketch) to convert the PSD to Sketch
  - I've downloaded Sketch to get the images.
  - I've downloaded Figma to copy the images from Sketch and export them to png. The images were exported in 1x and JPG given the huge size.
-3. After getting the assets and defined the content model. It's time to render the components.   
+3. After getting the assets and defined the content model. It's time to render the components.
+4. I was writting for many hours CSS and trying to get a pixel perfect approach.
+5. The last part I did the interactive part using reducers, actions and states in React.
+6. After I created the other pages.
+
+## What is the next?
+
+- I would like to have more time to add the BackEnd part and the Unit test for the components and containers I created.
+- However, thinking in Unit Test, I would test the behavior, reducers and action calls, and some visual test to verify the expected behaviour.
+- I think the most challenging part was create the responsive site.
+- That's all on my site and thanks for reading this README.md and my approach.
+
+PS The site has been published in Github Pages [in the next link](https://codesandtags.github.io/zemoga-ui-test). 
+     
 
 # Checklist
 
@@ -55,7 +68,7 @@ Requirements:
 - [X] Use media queries to adapt the layout in small screens. (comp not provided, so use your creativity).
 - [X] Non safe web font used: Lato
 - [X] You can rely on preprocessors / transpilers such as LESS/SASS or any sort of CSS framework if you want. (Pure CSS is also an option but you must argue the benefits)
-- [ ] Clicking on one of the links of the main menu redirects the user to the other pages (we only provide a comp for the main page so just use white pages with the title section on them).
+- [X] Clicking on one of the links of the main menu redirects the user to the other pages (we only provide a comp for the main page so just use white pages with the title section on them).
 
 ## Interaction - JS
 
@@ -63,13 +76,13 @@ Just add interaction in the middle voting boxes: Kanye West, Mark Zuckerberg, Cr
 
 Requirements:
 - [X] Create a data feed in JSON format with the structure that best suits the content for the voting boxes and populate the initial content from it.
-- [ ] The user can select either thumb up or thumb down button on each of the boxes (when the button is selected, a white border is displayed as featured in the comp)
-- [ ] Once the user clicks on the "Vote now” button, a message is displayed saying “Thank you for voting!” as well as a vote again button to vote again.
-- [ ] There is no limit in the amount of votes
-- [ ] Percentage bars change depending on the up/or downs votes.
+- [X] The user can select either thumb up or thumb down button on each of the boxes (when the button is selected, a white border is displayed as featured in the comp)
+- [X] Once the user clicks on the "Vote now” button, a message is displayed saying “Thank you for voting!” as well as a vote again button to vote again.
+- [X] There is no limit in the amount of votes
+- [X] Percentage bars change depending on the up/or downs votes.
 - [ ] Think on a way to persist the current votes so if the page is refreshed the data is not lost. (could be local in the browser or server side if you have those skills)
-- [ ] We want to see your vanilla/DOM JS skills so please do not use jQuery.
-- [ ] You can solve this part with either full Vanilla JS and some patterns, OR any sort of framework such as Angular, React, Vuejs, Ember, etc. Use the one you feel more confortable with.
+- [X] We want to see your vanilla/DOM JS skills so please do not use jQuery.
+- [X] You can solve this part with either full Vanilla JS and some patterns, OR any sort of framework such as Angular, React, Vuejs, Ember, etc. Use the one you feel more confortable with.
 - [ ] Bonus points: Some sort of Test (E2E, BDD, etc)
 
 
@@ -78,7 +91,7 @@ Requirements:
 **Only** if you are also applying for NodeJS or any other server side technology, or if you want to also show skills in this part:
 
 Requirements:
-- [ ] Activate the Login/Signup link in the main menu by showing a basic login dialog.
+- [X] Activate the Login/Signup link in the main menu by showing a basic login dialog.
 - [ ] If the user is already logged in, this link should be switched to a logout link.
 - [ ] The login box presents a basic user/pwd form and a button to switch to a signup (registration form with user, pwd, age and marriage status).
 - [ ] Persist the user data in the server side.

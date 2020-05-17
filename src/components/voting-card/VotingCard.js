@@ -58,14 +58,15 @@ const VotingCard = ({ candidate }) => {
             dispatch(voteNo(candidate.id));
         }
     }
+    const backgroundCardStyles = {
+        backgroundImage: `url("${candidate.imageUrl}")`
+    }
 
     return (
-        <div className="candidate-card">
-            <figure className="candidate-card__picture">
-                <img src={candidate.imageUrl} alt="candidate"/>
-            </figure>
+        <div className="candidate-card"
+            style={backgroundCardStyles}
+        >
             <div className="candidate-card__details">
-                <div className="candidate-card__blur"></div>
                 <div className="candidate-card__name">{candidate.name}</div>
                 <div className="candidate-card__timeline">
                     <span className="candidate-card__time">1 month ago </span>

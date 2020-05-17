@@ -1,0 +1,23 @@
+@import "../../styles/abstract/variables";
+@import "../../styles/mixins/responsive";
+
+.HowItWorks {
+  &__heading {
+    margin: 4rem 0;
+    text-align: left;
+    font-family: "Lato-Light";
+    font-size: 3.8rem;
+    color: $text-color-light;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: $text-color-light;
+    margin-bottom: 2rem;
+
+    p {
+      margin: 2rem 0;
+    }
+  }
+}

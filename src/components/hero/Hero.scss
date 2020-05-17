@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 
   @include respond('tablet-portrait') {
     padding-top: 17rem;
@@ -51,6 +52,7 @@
   }
 
   &__campaign-left {
+    position: relative;
     height: 4.6rem;
     background: rgba($text-color-light, 0.5);
     color: $color-white;
@@ -59,6 +61,15 @@
     align-items: center;
     justify-content: flex-end;
     padding-right: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -0.6rem;
+      border-left: 0.6rem solid rgba($text-color-light, 0.5);
+      border-top: 0.6rem solid transparent;
+      border-bottom: 0.6rem solid transparent;
+    }
   }
 
   &__campaign-right {
@@ -99,15 +110,23 @@
     display: flex;
 
     .thumbs {
-      padding: 1.8rem;
-      font-size: 2rem;
-      text-align: center;
+      padding: 2rem;
+      font-size: 2.4rem;
       width: 50%;
+      height: 6rem;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include respond('tablet-portrait') {
+        font-size: 3.4rem;
+        height: 8rem;
+      }
     }
 
     .thumbs--up {
-      background: rgba($color-primary, 0.8);
+      background: rgba($color-primary, 0.9);
 
       &:hover {
         background: rgba(darken($color-primary, 10%), 0.8);
@@ -115,7 +134,7 @@
     }
 
     .thumbs--down {
-      background: rgba($color-secondary, 0.8);
+      background: rgba($color-secondary, 0.9);
 
       &:hover {
         background: rgba(darken($color-secondary, 10%), 0.8);

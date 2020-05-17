@@ -7,6 +7,9 @@ export const VOTE_YES = 'VOTE_YES';
 export const VOTE_NO = 'VOTE_NO';
 export const VOTE_AGAIN = 'VOTE_AGAIN';
 
+export const VOTE_YES_CURRENT_CANDIDATE = 'VOTE_YES_CURRENT_CANDIDATE';
+export const VOTE_NO_CURRENT_CANDIDATE = 'VOTE_NO_CURRENT_CANDIDATE';
+
 // Action Functions
 export const fetchContentSite = () => dispatch => {
     dispatch({
@@ -48,5 +51,19 @@ export const voteAgain = (candidateId) => {
         payload: {
             candidateId
         }
+    }
+}
+
+export const voteYesCurrentCandidate = () => {
+    return {
+        type: VOTE_YES_CURRENT_CANDIDATE,
+        payload: {}
+    }
+}
+
+export const voteNoCurrentCandidate = () => {
+    return {
+        type: VOTE_NO_CURRENT_CANDIDATE,
+        payload: {}
     }
 }

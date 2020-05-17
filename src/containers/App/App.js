@@ -38,12 +38,12 @@ function App() {
         <div className="App container">
             <NavBar navigation={content.navigation} heading={content.siteName}/>
             <Hero content={content.hero}/>
-            <div className="inner-container">
+            <main className="inner-container">
                 <FeaturedText content={content.featuredTest} />
                 <VotingSection content={content.votes}/>
                 <NameForm />
                 <Footer content={content.footer}/>
-            </div>
+            </main>
         </div>
     );
 }

@@ -12,12 +12,12 @@ const VotingSection = ({ content }) => {
     }
 
     return (
-        <div className="voting-section">
+        <section className="voting-section">
             <h2 className="voting-section__heading">{content.headerTitle}</h2>
             <div className="voting-section__cards">
                 {renderVoteCards()}
             </div>
-        </div>
+        </section>
     )
 }
 

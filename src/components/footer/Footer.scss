@@ -39,6 +39,11 @@
 
   &__link {
     margin-top: 0.5rem;
+    font-size: 1.4rem;
+
+    a:hover {
+      color: $color-primary;
+    }
 
     @include respond('tablet-portrait') {
       margin-top: 0;
@@ -49,6 +54,7 @@
   &__network {
     margin-top: 0.5rem;
     margin-left: 1.2rem;
+    font-size: 1.4rem;
 
     &:first-child {
       margin-left: 0;
@@ -56,7 +62,15 @@
 
     span {
       color: $text-color;
-      font-size: 1.6rem;
+      font-size: 2rem;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    a:hover {
+      color: $color-primary;
     }
 
     @include respond('tablet-portrait') {
