@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ac98d6c57e5d62d49a6904ec8f6093a",
+    "revision": "a2a0273d4f37f7720a438b88256e4e0e",
     "url": "/zemoga-ui-test/index.html"
   },
   {
-    "revision": "7cc746071077cf2fce67",
-    "url": "/zemoga-ui-test/static/css/main.7784a265.chunk.css"
+    "revision": "fc58e699b2928b78f79d",
+    "url": "/zemoga-ui-test/static/css/main.56a9768e.chunk.css"
   },
   {
-    "revision": "ab622ddb27cc94820195",
-    "url": "/zemoga-ui-test/static/js/2.7150d177.chunk.js"
+    "revision": "d473de215b1aa4edd113",
+    "url": "/zemoga-ui-test/static/js/2.b359ae4a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/zemoga-ui-test/static/js/2.7150d177.chunk.js.LICENSE.txt"
+    "url": "/zemoga-ui-test/static/js/2.b359ae4a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7cc746071077cf2fce67",
-    "url": "/zemoga-ui-test/static/js/main.551a7f4e.chunk.js"
+    "revision": "fc58e699b2928b78f79d",
+    "url": "/zemoga-ui-test/static/js/main.929e2d53.chunk.js"
   },
   {
     "revision": "19ee8acdb37b6771c07e",
@@ -74,5 +74,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec763292e583294612f124c0b0def500",
     "url": "/zemoga-ui-test/static/media/fa-solid-900.ec763292.svg"
+  },
+  {
+    "revision": "b11acc970bd0654c3d4caa0dbe9cae8f",
+    "url": "/zemoga-ui-test/static/media/people.b11acc97.jpg"
   }
 ]);
